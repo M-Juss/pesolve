@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,6 +40,7 @@ public class TransactionModelAdapter extends RecyclerView.Adapter<TransactionMod
         holder.binding.note.setText(model.note);
         holder.binding.date.setText(model.date);
         holder.binding.amount.setText("₱ " + model.amount);
+
     }
 
     @Override
